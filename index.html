@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="py-1 fixed-top">
+    <header class="py-1">
         <nav class="navbar bg-body-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-lg-none" href="#">
@@ -29,7 +29,7 @@
                     <input class="form-control me-2 bg-gray" type="search"
                         placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
-                <div class="icon d-flex gap-3">
+                <div class="icon d-flex gap-3 ">
                     <i class="fa-solid fa-list d-none d-lg-block"></i>
                     <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
@@ -37,8 +37,62 @@
                 </div>
             </div>
         </nav>
-        </div>
     </header>
+    <main class="d-flex px-0">
+        <div class="sidebar d-flex flex-column text-white justify-content-between ">
+            <div class="sidebar-top d-flex flex-column align-items-center gap-3 py-3">
+                <div>
+                    <i class="fa-solid fa-house"></i><span class="d-none">Home</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i><span class="d-none">Stats</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-signal"></i><span class="d-none">Signal</span>
+                </div>
+            </div>
+            <div class="sidebar-bot d-flex align-items-center flex-column">
+                <div>
+                    <i class="fa-solid fa-gear"></i><span class="px-1 d-none">Admin</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-content py-3 text-bg-primary">
+            <div class="container">
+                <div class="main-content-head text-white ">
+                    <div class="new-stud text">
+                        <span>Nuovo Studente</span>
+                        <i class="fa-regular fa-square-plus fa-3x px-3"></i>
+                    </div>
+                    <div class="boolean-pils py-3">
+                        <div>
+                            <h2 class="d-inline">Boolean</h2>
+                            <span class="badge bg-pils-boolean rounded-5 py-1">Piano Blaze</span>
+                        </div>
+                        <div>
+                            <span class="badge bg-pils-boolean rounded-5 py-1">3 app</span><i
+                                class="fa-solid fa-angles-right"></i>
+                            <span class="badge bg-pils-boolean"></span>
+                            <span class="badge bg-pils-boolean rounded-5 py-1">+</span>
+                            <span class="badge bg-pils-boolean rounded-5 py-1 d-none">Boolean mobile app</span>
+                            <span class="badge bg-pils-boolean rounded-5 py-1 d-none">Boolean mobile app</span><span
+                                d-none class="badge bg-pils-boolean rounded-5 py-1"></span>
+                            <span class="badge bg-pils-boolean rounded-5 py-1 d-none">Boolean web app</span><span
+                                class="badge bg-pils-boolean rounded-5 py-1"></span>
+                            <span class="badge bg-pils-boolean rounded-5 py-1 d-none">Boolean blog app</span><span
+                                class="badge bg-pils-boolean rounded-5 py-2"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Studenti online negli ultimi 30 minuti</span>
+                        <h2>125</h2>
+                    </div>
+                </div>
+                <div class="main-content-body">
+
+                </div>
+            </div>
+    </main>
 
 </body>
 

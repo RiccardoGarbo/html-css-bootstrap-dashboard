@@ -1,4 +1,9 @@
 /*header*/
+header {
+    height: 80px;
+    background-color: white;
+
+}
 
 #small-logo {
     width: 50px;
@@ -11,4 +16,26 @@
 
 .fa-bell {
     color: #FF8F00;
+}
+
+/*MAIN*/
+
+.sidebar {
+    background-image: url(/img/sidebar-bg.png);
+    background-size: cover;
+    width: 80px;
+    background-color: #051E34;
+
+}
+
+.bg-pils-boolean {
+    background-color: #165BBA;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.fa-square-plus {
+    vertical-align: middle;
 }
