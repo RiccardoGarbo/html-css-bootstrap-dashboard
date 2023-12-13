@@ -2,13 +2,11 @@
 header {
     height: 80px;
     background-color: white;
-
 }
 
 #small-logo {
     width: 50px;
 }
-
 
 .bg-gray {
     background-color: #E5E5E5;
@@ -19,13 +17,18 @@ header {
 }
 
 /*MAIN*/
+main {
+    height: calc(100vh - 80px)
+}
 
 /*sidebar*/
 .sidebar {
     background-image: url(/img/sidebar-bg.png);
     background-size: cover;
     background-color: #051E34;
-
+    flex-basis: 100px;
+    flex-shrink: 0;
+    padding: 20px 0;
 }
 
 .bg-pils-boolean {
@@ -45,8 +48,8 @@ header {
 }
 
 .main-content {
-    width: 100%;
-    max-height: 100vh;
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .fa-code {
@@ -57,4 +60,8 @@ header {
 .bg-code {
     background-color: #F26551;
 
+}
+
+tbody td {
+    text-align: center;
 }
