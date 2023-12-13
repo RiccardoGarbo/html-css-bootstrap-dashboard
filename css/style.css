@@ -70,6 +70,14 @@ tbody td {
 
 }
 
+.fa-pen,
+.fa-trash {
+    border-color: gray;
+    color: gray;
+    border-radius: 20%;
+
+}
+
 .dropdown-menu[data-bs-popper] {
     top: 100%;
     left: -130px;
