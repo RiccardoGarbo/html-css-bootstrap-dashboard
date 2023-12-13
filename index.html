@@ -31,10 +31,23 @@
                         placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
                 <div class="icon d-flex gap-3 ">
-                    <i class="fa-solid fa-list d-none d-lg-block"></i>
-                    <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
-                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
-                    <i class="fa-solid fa-bell"></i>
+                    <div class="d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-list d-none d-lg-block"></i>
+                        <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+                    </div>
+
+                </div>
+                <div class="dropdown px-3">
+                    <button class="btn dropdown-toggle bg-bell-btn border-0 " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><i class="fa-solid fa-bell"></i>
+
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -64,7 +77,24 @@
                     <div class="main-content-head text-white d-md-flex justify-content-between align-items-center">
                         <div class="new-stud text order-md-3">
                             <span>Nuovo Studente</span>
-                            <i class="fa-regular fa-square-plus fa-3x px-3"></i>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                    class="fa-regular fa-square-plus fa-3x px-3"></i>
+                            </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo utente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+
+
+                                </div>
+                            </div>
+
                         </div>
                         <div class="boolean-pils py-3">
                             <div>
@@ -222,9 +252,10 @@
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapseOne" aria-expanded="true"
                                                 aria-controls="collapseOne">
-                                                <h6>
+                                                <span class="fw-bold">
                                                     Come aggiungere un nuovo studente?
-                                                </h6>
+                                                </span>
+
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse show"
@@ -239,9 +270,9 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                 aria-expanded="false" aria-controls="collapseTwo">
-                                                <h6>
+                                                <span class="fw-bold">
                                                     Come posso accedere alle informazioni del mio account?
-                                                </h6>
+                                                </span>
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse"
@@ -256,7 +287,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                 aria-expanded="false" aria-controls="collapseThree">
-                                                <h6>Posso usare questa dashbord da mobile?</h6>
+                                                <span class="fw-bold">Posso usare questa dashbord da mobile?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse"
@@ -320,7 +351,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -26,9 +26,10 @@ main {
     background-image: url(/img/sidebar-bg.png);
     background-size: cover;
     background-color: #051E34;
-    flex-basis: 100px;
+    flex-basis: 80px;
     flex-shrink: 0;
     padding: 20px 0;
+
 }
 
 .bg-pils-boolean {
@@ -64,4 +65,27 @@ main {
 
 tbody td {
     text-align: center;
+}
+
+.dropdown-toggle::after {
+    display: none;
+
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -130px;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+.bg-bell-btn {
+    color: white;
+}
+
+
+@media screen and (min-width:992px) {
+    .sidebar {
+        flex-basis: 150px;
+    }
+
 }
