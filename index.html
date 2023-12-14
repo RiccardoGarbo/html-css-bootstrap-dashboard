@@ -11,13 +11,14 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
         integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
         crossorigin='anonymous' />
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/mobile-logo.png" type="image/x-icon">
     <script src="path/to/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="py-1">
+        <!--Navbar HEADER-->
         <nav class="navbar bg-body-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-lg-none" href="#">
@@ -52,6 +53,12 @@
             </div>
         </nav>
     </header>
+
+
+    <!--MAIN-->
+
+
+    <!--MAIN SIDEBAR-->
     <main class="d-flex px-0">
         <div class="sidebar d-flex flex-column text-white justify-content-between ">
             <div class="sidebar-top d-flex flex-column align-items-center gap-3 ">
@@ -71,17 +78,22 @@
                 </div>
             </div>
         </div>
+
+
+        <!--MAIN CONTENT-->
         <div class="main-content">
+            <!--HEADER MAIN CONTENT-->
             <div class="header-main text-bg-primary py-3">
                 <div class="container-fluid">
                     <div class="main-content-head text-white d-md-flex justify-content-between align-items-center">
+                        <!--Button new student-->
                         <div class="new-stud text order-md-3">
                             <span>Nuovo Studente</span>
                             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                                     class="fa-regular fa-square-plus fa-3x px-3"></i>
                             </button>
-
+                            <!--OFFCANVAS BTN NEW STUDENT-->
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
@@ -159,6 +171,7 @@
                             </div>
 
                         </div>
+                        <!--PILS BUTTONS-->
                         <div class="boolean-pils">
                             <div class="py-2">
                                 <h2 class="d-inline">Boolean</h2>
@@ -187,7 +200,7 @@
                     </div>
                 </div>
             </div>
-
+            <!--Main content body-->
             <div class="main-content-body my-3 ">
                 <div class="container-fluid">
                     <div class="row">
@@ -196,6 +209,7 @@
                                 <div class="card-header">
                                     <h2>Prossime classi</h2>
                                 </div>
+                                <!--table-->
                                 <div
                                     class="table-responsive table-responsive-sm table-responsive-md table-responsive-lg">
                                     <table class="table">
@@ -325,6 +339,7 @@
                                     </table>
                                 </div>
                             </div>
+                            <!--card f.a.q-->
                             <div class="card my-3">
                                 <div class="card-header">
                                     <h2>F.A.Q</h2>
@@ -385,6 +400,7 @@
                         </div>
                         <div class="col-12 col-lg-4">
                             <div class="card">
+                                <!--card todo-->
                                 <div class="card-header">
                                     <h2>Todo</h2>
                                 </div>
@@ -414,6 +430,7 @@
 
                             </div>
                             <div class="card my-3">
+                                <!--card with stats-->
                                 <img src="img/stats.jpeg" class="card-img-top" alt="grafic">
                                 <div class="card-body">
                                     <h5 class="card-title">Utenti attivi</h5>
